@@ -3,9 +3,12 @@ RENDER_TEMPLATE:=./render-template.py
 DATA_FILES=$(wildcard data/*.json)
 TRANSCRIPT_FILES=$(DATA_FILES:data/%.json=transcripts/%.html)
 
-all: $(TRANSCRIPT_FILES)
+all: html
 .PHONY: all
 .DEFAULT: all
+
+html: $(TRANSCRIPT_FILES)
+.PHONY: html
 
 clean:
 	rm -f $(TRANSCRIPT_FILES)

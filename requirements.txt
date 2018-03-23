@@ -2,3 +2,7 @@ docopt
 jinja2
 durations
 ghp-import
+flake8
+av
+pillow
+tqdm
