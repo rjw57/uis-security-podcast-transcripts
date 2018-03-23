@@ -14,7 +14,7 @@ A very simple [template](transcript.in.html) is provided to render a transcript
 from the raw data from Google. To render the transcriptions:
 
 ```console
-$ python3 -m virtualenv venv
+$ python3 -m virtualenv venv -p $(which python3)
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ make
